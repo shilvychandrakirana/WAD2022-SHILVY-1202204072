@@ -51,7 +51,7 @@ $Duration = isset($_GET['Duration']) ? $_GET['Duration'] : '';
 $Check_Out = date('Y-m-d', strtotime($Check_In."+$Duration days"));
 $Car_Type = isset($_GET['Car_Type']) ? $_GET['Car_Type'] : '';
 $Phone_Number = isset($_GET['Phone_Number']) ? $_GET['Phone_Number'] : '';
-$Services = isset($_GET['Services']) ? $_GET['Services'] : '';
+$Add_Service = isset($_GET['Services']) ? $_GET['Services'] : '';
 $Total_Prices = isset($_GET['Total_Price']) ? $_GET['Total_Price'] : '';
 
 ?>
@@ -79,7 +79,7 @@ $Total_Prices = isset($_GET['Total_Price']) ? $_GET['Total_Price'] : '';
                 <td><?php echo $Check_Out ?></td>
                 <td><?php echo $Car_Type?></td>
                 <td><?php echo $Phone_Number ?></td>
-                <td><?php echo $Services?></td>
+                <td><?php echo $Add_Service?></td>
                 <td><?php echo $Total_Prices?></td>
         </tr>
     </thbody>

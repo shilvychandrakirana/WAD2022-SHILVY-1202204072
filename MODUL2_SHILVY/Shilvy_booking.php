@@ -41,8 +41,26 @@
 </p>
     </div>
 </div>
-      <center><img src="BRIO.jpg"  width="350" height="200" alt="..."></center>
-  
+
+<?php
+if(isset($_GET['jenismobil'])){
+  if($_GET['jenismobil']=='BRIO'){
+      echo '<img width="350" height="250" src="BRIO.jpg"></img>';
+  }
+  elseif($_GET['jenismobil']=='XPANDER'){
+      echo '<img width="350" height="250" src="XPANDER.jpg"></img>';
+  }
+  elseif($_GET['jenismobil']=='YARIS'){
+    echo '<img width="350" height="250" src="YARIS.png"></img>';
+}
+}
+else{
+echo '<img width="350" height="250" src=""></img>';
+}
+?>
+
+
+
 <div class="container">
   <form action="mybooking.php" method="GET">
     <div class="mb-3">

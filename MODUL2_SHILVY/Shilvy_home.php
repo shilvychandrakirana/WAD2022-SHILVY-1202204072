@@ -61,7 +61,7 @@
                 </p>
                 <form action="Booking.php" method="POST">
                           <div class="d-flex justify-content-center">
-                          <button type ="btn btn-primary" href="#" class="btn btn-primary" value="BRIO" nama="BookNow">Book Now</a>
+                          <a class="btn btn-primary" href="/PHP_DASAR/MODUL2_SHILVY/Booking.php?jenismobil<?php echo 'BRIO' ?>" value="BRIO" nama="BookNow">Book Now</a>
                 </div>
                 </form>
             </ul>
@@ -85,7 +85,7 @@
                 </p>
                 <form action="Booking.php" method="POST">
                           <div class="d-flex justify-content-center">
-                          <button type ="btn btn-primary" href="#" class="btn btn-primary" value="XPANDER" nama="BookNow">Book Now</a>
+                          <a class="btn btn-primary" href="/PHP_DASAR/MODUL2_SHILVY/Booking.php?jenismobil<?php echo 'XPANDER' ?>" value="XPANDER" nama="BookNow">Book Now</a>
                 </div>
                 </form>
             </ul>
@@ -109,7 +109,7 @@
                 </p>
                 <form action="Booking.php" method="POST">
                           <div class="d-flex justify-content-center">
-                          <button type ="btn btn-primary" href="#" class="btn btn-primary" value="YARIS" nama="BookNow">Book Now</a>
+                          <a class="btn btn-primary" href="/PHP_DASAR/MODUL2_SHILVY/Booking.php?jenismobil<?php echo 'YARIS' ?>" value="YARIS" nama="BookNow">Book Now</a>
                 </div>
                 </form>
             </ul>
