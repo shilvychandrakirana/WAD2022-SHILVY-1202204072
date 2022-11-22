@@ -34,7 +34,7 @@
 </div>
 
 <div class="container mt-5" style="width:100%">
-    <form action="MyItem.php" method="POST">
+    <form action="create.php" method="POST">
         <div class="mb-3">
             <label for="nama_mobil" class="form-label">
                 Nama Mobil
