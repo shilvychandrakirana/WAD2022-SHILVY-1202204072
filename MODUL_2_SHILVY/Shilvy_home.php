@@ -105,7 +105,7 @@
                 <li class="list-group-item">4 kursi</li>
                 <li class="list-group-item">1200 cc</li>
                 <li class="list-group-item">Automatic</li>
-                <center>
+                <centeras>
                 </p>
                 <form action="Shilvy_booking.php" method="POST">
                       <div class="d-flex justify-content-center">
