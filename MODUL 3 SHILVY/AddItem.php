@@ -34,7 +34,7 @@
 </div>
 
 <div class="container mt-5" style="width:100%">
-    <form action="create.php" method="POST">
+    <form action="create.php" method="POST" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="nama_mobil" class="form-label">
                 Nama Mobil
@@ -67,19 +67,19 @@
             </textarea>
         </div>
         <div class="mb-3">
-            <label for="formFileSm" class="form-label">
+            <label for="Foto" class="form-label">
                 Foto
             </label>
-            <input class="form-control form-control-sm" id="formFileSm" name="foto" type="file">
+            <input class="form-control form-control-sm" id="Foto" name="Foto" type="file">
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="radio" id="flexRadioDefault1">
+            <input class="form-check-input" value="Lunas" type="radio" name="status_pembayaran" id="flexRadioDefault1">
             <label class="form-check-label" for="flexRadioDefault1">
                 Lunas
                 </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="radio" id="flexRadioDefault2" checked>
+            <input class="form-check-input" value="Belum Lunas" type="radio" name="status_pembayaran" id="flexRadioDefault2" checked>
             <label class="form-check-label" for="flexRadioDefault2">
                 Belum Lunas
             </label>

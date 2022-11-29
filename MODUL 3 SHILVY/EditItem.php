@@ -11,8 +11,6 @@
     <title>Modul  3 WAD</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    
-
 </head>
 <body>
     
@@ -28,20 +26,19 @@
       </div>
     </div>
   </div>
-</nav>
-
+</nav><br></br>
     <?php
         $connect=mysqli_connect("localhost", "root", "", "modul3");
         $id=$_GET['id'];
         $query=mysqli_query($connect, "SELECT * FROM showroom_shilvy_table WHERE id_mobil=$id");
         $selects=mysqli_fetch_array($query);
     ?>
-    <h2><b><?php echo $selects['nama_mobil'] ?></b></h2>
-    <p>Detail Mobil <?php echo $selects['nama_mobil'] ?></p>
+    <h1><b>Edit</b></h1>
+    <p>Edit Mobil <?php echo $selects['nama_mobil'] ?></p>
     <div class='d-flex justify-content-center align-items-start gap-5 mt-5'>
         <img src="foto/<?php echo $selects['foto_mobil']?>" alt="No Image"></img>
-        <form enctype='multipart/form-data'>
-            <div class="mb-3">
+        <form action="/update.php?id=<?php echo $selects['id_mobil']?>" method="POST" enctype='multipart/form-data'>
+        <div class="mb-3">
                 <label for="nama_mobil"><b>Nama Mobil</b></label>
                 <input type="text" name="nama_mobil" class="form-control form-control-readonly" value="<?php echo $selects['nama_mobil']?>" readonly>
             </div>
@@ -75,7 +72,7 @@
                 </div>
             </div>
             
-                <a href='EditItem.php?id=<?php echo $selects['id_mobil']?>' button class='btn btn-primary' type='Edit'>Edit</button>             
+                <input class="btn btn-primary" type="submit" name="Simpan" value="Simpan">                   
             
         </form>
     </div>

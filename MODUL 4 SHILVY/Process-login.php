@@ -6,7 +6,7 @@
             $email=$_POST['email'];
             $password=$_POST['password'];
             setCookie("email", $email, time()+3600);
-            ("password", $password, time()+3600);
+            setCookie("password", $password, time()+3600);
         }
         $connect=mysqli_connect("localhost", "root", "", "wad_modul4_shilvy");
         $email=$_POST['email'];

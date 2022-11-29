@@ -22,9 +22,9 @@
       width: 40px;
       height: 10px;
       left: 100px;
-      top: 390px;
+      top: 410px;
 
-      font-family: 'Raleway';
+      font-family: 'arial';
       font-style: normal;
       font-weight: 500;
       font-size: 15px;
@@ -73,7 +73,7 @@
       </div>
 </div>
 <div class="col">
-  <img class="card-img-top img-responsive center-block d-block mx-auto" src="HONDA HR-V.jpg" width="250" height="280" alt="center">
+  <img class="card-img-top img-responsive center-block d-block mx-auto" src="foto/HONDA HR-V.jpg" width="250" height="280" alt="center">
 </div>
 </div>
 </section>

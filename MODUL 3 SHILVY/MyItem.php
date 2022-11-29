@@ -14,16 +14,17 @@
 
     <style>
     .nav-link button {
-        width: 66px;
-        height: 19px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 8px 22px;
+      gap: 10px;
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: center;
-        letter-spacing: 0.46px;
+      position: absolute;
+      width: 110px;
+      height: 40px;
+      left: 1133px;
+      top: 22px;
 
         /* light/primary/origin */
 
@@ -36,12 +37,6 @@
         order: 1;
         flex-grow: 0;
 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 8px 22px;
-        gap: 10px;
-
         width: 105px;
         height: 25px;
 
@@ -51,6 +46,7 @@
         border-radius: 5px;
 
         border: none;
+        
     }
     </style>
 </head>
