@@ -53,7 +53,7 @@ class UserController extends Controller
             'repassword' => 'required|same:password',
         ]);
 
-        User::create([
+        User::created([
             'email' => $request->email,
             'no_hp' => $request->no_hp,
             'password' => bcrypt($request->password),
